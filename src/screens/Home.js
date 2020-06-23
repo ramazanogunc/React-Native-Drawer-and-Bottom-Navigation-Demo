@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Button, Text, Toast, Header, Body, Title, Left, Right, Icon, Content, H1 } from 'native-base'
+import { Container, Button, Text, Toast, Header, Body, Title, Left, Right, Icon, Content, H1, View } from 'native-base'
 import { Actions } from 'react-native-router-flux'
 
 export default class Home extends Component {
@@ -8,28 +8,34 @@ export default class Home extends Component {
             <Container>
                 <Header>
                     <Left>
-                        <Button transparent>
-                            <Icon type='Octicons' name='three-bars' />
-                        </Button>
+
                     </Left>
                     <Body>
                         <Title>Home Screen</Title>
                     </Body>
                     <Right />
                 </Header>
-                <Content padder >
-                    <H1>Welcome to Home screen</H1>
-                    <Button style={{ marginTop: 20 }} onPress={() => Actions.screen2()}>
-                        <Text>Go to Screen2</Text>
-                    </Button>
+                <Content padder>
+                    <View style={{alignItems: 'center'}}>
+                        <H1>Welcome to Home screen</H1>
+                        <Button style={{ marginTop: 20 }} info onPress={this.goToDrawerScreen}>
+                            <Text>Go to Drawer Navigation Screen</Text>
+                        </Button>
+                        <Button style={{ marginTop: 20 }} info onPress={this.goToBottomScreen}>
+                            <Text>Go to Bottom Navigation Screen</Text>
+                        </Button>
+                    </View>
+
                 </Content>
             </Container>
         )
     }
 
-    buttonClick = () => {
-        Toast.show({
-            text: 'Wrong password!'
-        });
+    goToDrawerScreen = () => {
+        Actions.drawer();
+    }
+
+    goToBottomScreen = () => {
+        Actions.bottom();
     }
 }
