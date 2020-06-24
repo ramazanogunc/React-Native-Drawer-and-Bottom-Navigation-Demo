@@ -1,22 +1,18 @@
 import React, { Component } from 'react';
-import { Container, Button, Text, Toast, Header, Body, Title, Left, Right, Icon, Content, H1 } from 'native-base';
+import { Container, Button, Text, Toast, Header as NativeHeader, Body, Title, Left, Right, } from 'native-base';
 import PropTypes from 'prop-types';
 
 export default class Header extends Component {
     render() {
-        const { title } = this.props;
+        const { title, left, right } = this.props;
         return (
-            <Header>
-                <Left>
-                    <Button transparent>
-                        <Icon type='Octicons' name='three-bars' />
-                    </Button>
-                </Left>
+            <NativeHeader>
+                {left}
                 <Body>
                     <Title>{title}</Title>
                 </Body>
-                <Right />
-            </Header>
+                {right}
+            </NativeHeader>
 
         )
     }
@@ -26,4 +22,11 @@ export default class Header extends Component {
 
 Header.propTypes = {
     title: PropTypes.string,
+    left : PropTypes.object,
+    right : PropTypes.object,
+}
+
+Header.defaultProps = {
+    left : <Left />,
+    right : <Right />,
 }

@@ -10,8 +10,7 @@ class BottomMenu extends Component {
       <Footer>
         <FooterTab>
           <Menu icon="home" title="Bottom1" clickMenu={() => (Actions.bottom1())} />
-          <Menu icon="menu" title="Bottom2" clickMenu={() => (Actions.bottom2())} />
-
+          <Menu icon="desktop" title="Bottom2" clickMenu={() => (Actions.bottom2())} />
         </FooterTab>
       </Footer>
     );
