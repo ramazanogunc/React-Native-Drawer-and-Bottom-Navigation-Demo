@@ -18,7 +18,7 @@ react-native run-ios
 * react-native-reanimated
 * react-native-gesture-handler
 # Ekran görüntüleri
-<img src="https://raw.githubusercontent.com/ramazanogunc/React-Native-Drawer-and-Bottom-Navigation-Demo/master/screenshoots/1.png" width="300" alt="Ana Ekran"/> <img src="https://raw.githubusercontent.com/ramazanogunc/React-Native-Drawer-and-Bottom-Navigation-Demo/master/screenshoots/2.png" width="300" alt="Drawer Navigasyon Ekranı"/> <img src="https://raw.githubusercontent.com/ramazanogunc/React-Native-Drawer-and-Bottom-Navigation-Demo/master/screenshoots/3.png" width="300" alt="Bottom navigasyon Ekranı"/>
+<img src="https://raw.githubusercontent.com/ramazanogunc/React-Native-Drawer-and-Bottom-Navigation-Demo/master/screenshoots/1.png" width="250" alt="Ana Ekran"/> <img src="https://raw.githubusercontent.com/ramazanogunc/React-Native-Drawer-and-Bottom-Navigation-Demo/master/screenshoots/2.png" width="250" alt="Drawer Navigasyon Ekranı"/> <img src="https://raw.githubusercontent.com/ramazanogunc/React-Native-Drawer-and-Bottom-Navigation-Demo/master/screenshoots/3.png" width="250" alt="Bottom navigasyon Ekranı"/>
 
 
 
